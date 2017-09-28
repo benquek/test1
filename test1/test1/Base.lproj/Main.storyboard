@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TkO-Cx-eP1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FaQ-d2-nEO">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="FaQ-d2-nEO" secondAttribute="height" multiplier="32:23" id="ckJ-5H-LPY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...testing......." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7N7-sn-c51">
+                                        <rect key="frame" x="95.5" y="230" width="129" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="3j9-8D-78t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" red="0.44426811883904693" green="0.58820169931093857" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...testing......." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCw-hv-X8F">
+                                        <rect key="frame" x="95.5" y="250" width="129" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ave-Ue-Jx0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" red="0.4442681188" green="0.58820169929999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZp-gp-X6d">
+                                        <rect key="frame" x="93.5" y="270" width="133" height="55"/>
+                                        <state key="normal" title="Button 111" image="images (1)">
+                                            <color key="titleColor" red="1" green="0.44237392571429313" blue="0.47468323822781755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bpi-6G-x1b"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4O-xq-wKE">
+                                        <rect key="frame" x="135" y="325" width="50" height="243"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FaQ-d2-nEO" secondAttribute="trailing" id="5uV-7u-yOg"/>
+                                    <constraint firstItem="FaQ-d2-nEO" firstAttribute="leading" secondItem="TkO-Cx-eP1" secondAttribute="leading" id="9cz-Gt-INL"/>
+                                    <constraint firstItem="7N7-sn-c51" firstAttribute="top" secondItem="FaQ-d2-nEO" secondAttribute="bottom" id="ClT-fO-KlR"/>
+                                    <constraint firstItem="FaQ-d2-nEO" firstAttribute="top" secondItem="TkO-Cx-eP1" secondAttribute="top" id="ef9-IN-Oi5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TkO-Cx-eP1" secondAttribute="trailing" id="6Vx-5m-0VA"/>
+                            <constraint firstItem="TkO-Cx-eP1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6xo-Lq-dGT"/>
+                            <constraint firstItem="TkO-Cx-eP1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aLd-Th-vr1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TkO-Cx-eP1" secondAttribute="bottom" id="uxb-lR-SOw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Test2" destination="pCw-hv-X8F" id="xAU-1K-YQD"/>
+                        <outlet property="mybackGround" destination="FaQ-d2-nEO" id="Xux-n3-X6B"/>
+                        <outlet property="test1" destination="7N7-sn-c51" id="gj9-lf-NhD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215.625" y="-701.4084507042254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="460" height="230"/>
+        <image name="images (1)" width="50" height="33"/>
+    </resources>
+</document>
